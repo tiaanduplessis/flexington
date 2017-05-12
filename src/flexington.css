@@ -1,0 +1,107 @@
+.row,
+.col {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.col-reverse {
+  flex-direction: column-reverse;
+}
+
+.row-no-wrap,
+.col-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.row-top,
+.col-left {
+  align-items: flex-start;
+}
+
+.row-middle,
+.col-middle {
+  align-items: center;
+}
+
+.row-bottom,
+.col-right {
+  align-items: flex-end;
+}
+
+.row-stretch,
+.col-stretch {
+  align-items: stretch;
+}
+
+.row-baseline,
+.col-baseline {
+  align-items: baseline;
+}
+
+.row-center,
+.col-center {
+  justify-content: center;
+}
+
+.row-around,
+.col-around {
+  justify-content: space-around;
+}
+
+.row-left,
+.col-top {
+  justify-content: flex-start;
+}
+
+.row-right,
+.col-bottom {
+  justify-content: flex-end;
+}
+
+.cell-1 {
+  flex: 1;
+}
+
+.cell-2 {
+  flex: 2;
+}
+
+.cell-3 {
+  flex: 3;
+}
+
+.cell-4 {
+  flex: 4;
+}
+
+.cell-5 {
+  flex: 5;
+}
+
+.cell-6 {
+  flex: 6;
+}
+
+.cell-left,
+.cell-top {
+  align-self: flex-start;
+}
+
+.cell-right,
+.cell-bottom {
+  align-self: flex-end;
+}
+
+.cell-center,
+.cell-middle {
+  align-self: center;
+}

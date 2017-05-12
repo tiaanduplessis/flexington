@@ -1,0 +1,52 @@
+{
+  "name": "flexington",
+  "version": "1.0.0",
+  "description": "The gentlemen's choice in flexbox based CSS layout",
+  "license": "MIT",
+  "main": "dist/flexington.min.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiaanduplessis/flexington.git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/flexington",
+  "bugs": "https://github.com/tiaanduplessis/flexington/issues",
+  "author": {
+    "name": "Tiaan",
+    "email": "tiaanduplessis@hotmail.com",
+    "url": "tiaan.beer"
+  },
+  "scripts": {
+    "lint": "stylelint src/*.css",
+    "test": "npm run lint",
+    "docs:serve": " browser-sync start --server 'docs' --files 'docs'",
+    "prefix": "autoprefixer-cli -o dist/flexington.css src/flexington.css",
+    "minify": "cssnano dist/flexington.css dist/flexington.min.css",
+    "build": "npm run prefix; npm run minify",
+    "prepublish": "npm run build",
+    "precommit": "npm test",
+    "format": "csscomb src"
+  },
+  "keywords": [
+    "css",
+    "layout",
+    "flexbox",
+    "grid",
+    "column",
+    "row",
+    "cell",
+    "flexington"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.18.8",
+    "csscomb": "^4.0.1",
+    "cssnano-cli": "^1.0.5",
+    "husky": "^0.13.3",
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  }
+}
