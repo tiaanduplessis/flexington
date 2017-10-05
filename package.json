@@ -42,9 +42,9 @@
     "browser-sync": "^2.18.8",
     "csscomb": "^4.0.1",
     "cssnano-cli": "^1.0.5",
-    "husky": "^0.13.3",
-    "stylelint": "^7.10.1",
-    "stylelint-config-standard": "^16.0.0"
+    "husky": "^0.14.3",
+    "stylelint": "^8.1.1",
+    "stylelint-config-standard": "^17.0.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard"
