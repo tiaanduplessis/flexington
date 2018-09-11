@@ -62,6 +62,8 @@
 
 ## About
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/flexington.svg)](https://greenkeeper.io/)
+
 Flexington is a simple flexbox based layout system that allows you to quickly build responsive layouts with minimal effort.
 
 ## Install
